@@ -22,4 +22,4 @@ RUN $ANDROID_HOME/tools/bin/sdkmanager "build-tools;${ANDROID_BUILD_TOOLS_VERSIO
 # Install Build Essentials
 RUN apt-get update && apt-get install build-essential -y && apt-get install file -y && apt-get install apt-utils -y
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
-RUN apt-get update && apt-get install nodejs -y
+RUN apt-get update && apt-get install nodejs -y && apt install ruby-full -y && gem install fastlane
